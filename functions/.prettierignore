@@ -1,0 +1,17 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+.build
+
+# TypeScript outputs
+dist
+
+# env variables
+.env
+.env.*
+
+# Generated Swagger files
+swagger
