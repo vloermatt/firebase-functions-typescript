@@ -8,7 +8,8 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "dev": "nodemon -e ts --exec npm run serve"
+    "dev": "nodemon -e ts --exec npm run serve",
+    "lint": "eslint --ext .js,.ts ."
   },
   "engines": {
     "node": "18"
