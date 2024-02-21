@@ -1,7 +1,8 @@
 {
   "name": "firebase-functions-typescript",
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "dev": "cd functions && npm run dev"
   },
   "engines": {
     "node": "18"
