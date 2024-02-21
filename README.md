@@ -30,6 +30,24 @@ Modern native git hooks made easy. Checkout the `.husky` folder to see what we'v
 
 ESLint is a static code analysis tool for identifying problematic patterns found in JavaScript code
 
+## Git Hooks
+
+### pre-commit
+
+Format staged files using `prettier` via `lint-staged`.
+
+### commit-msg
+
+Enforce conventional commit messages using `commitLint`.
+
+### pre-push
+
+Run `eslint` to ensure that there are no errors. This one can be annoying and this can be skipped by runing `git push --force` if you're trying to just push a branch that's still under construction.
+
+### post-merge
+
+Runs `npm install` to sync any dependency changes or updates that might have been pulled.
+
 ## Deployment Triggers & Github Environments
 
 The basic setup here is to trigger deployment on pushes to the `main` and `develop` branches.
